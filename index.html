@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Tiếng Anh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Học Tiếng Anh</h1>
+        </header>
+
+        <!-- Tab từ vựng -->
+        <section id="add-word">
+            <h2>Thêm từ vựng mới</h2>
+            <input type="text" id="english-word" placeholder="Từ vựng tiếng Anh" />
+            <input type="text" id="meaning" placeholder="Nghĩa của từ" />
+            <button id="add-button">Thêm từ</button>
+        </section>
+
+        <!-- Danh sách từ đã học -->
+        <section id="word-list">
+            <h2>Danh sách từ đã học</h2>
+            <ul id="words">
+                <!-- Các từ vựng sẽ được hiển thị ở đây -->
+            </ul>
+        </section>
+
+        <!-- Tab Quiz -->
+        <section id="quiz" style="display:none;">
+            <h2>Quiz Trắc Nghiệm</h2>
+            <p id="quiz-question">Câu hỏi sẽ xuất hiện ở đây.</p>
+            <div id="quiz-options">
+                <!-- Các đáp án sẽ xuất hiện ở đây -->
+            </div>
+            <button id="next-question" style="display:none;">Câu hỏi tiếp theo</button>
+            <p id="quiz-score">Điểm: 0</p>
+        </section>
+
+        <footer>
+            <p>© 2024 <a href="https://canhdev.vercel.app" style="text-decoration: none; font-family: 'Courier New', Courier, monospace; color: black; font-size: 15px;" target="_blank">Canhdev</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
